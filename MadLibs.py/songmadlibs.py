@@ -1,0 +1,11 @@
+animal = input("enter a animal: ")
+river = input("enter a river: ")
+thing = input("enter anything: ")
+direction = input("enter a direction: ")
+way = input("enter a way: ")
+item = input("enter an item: ")
+
+print("Climb ye", way, "and", way, "and", way)
+print("Leave our", item, "to be lost along the", river)
+print("Oh my", animal, "my", animal, "my", animal) 
+print("There is", thing, "left to bring me back", direction)
