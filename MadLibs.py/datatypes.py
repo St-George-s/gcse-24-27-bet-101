@@ -44,4 +44,4 @@ print(multiply2)
 
 #activity 3 - take radius as input, output volume of sphere (v = 4/3 x pi x r^^3)
 
-radius 
+radius = input("input a radius: ")
