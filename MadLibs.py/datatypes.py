@@ -31,8 +31,8 @@ print(exponent)
 
 #activity 1 - take two inputs multiply them together and output answer
 
-input1 = input("enter a input: ")
-input2 = input("enter a input: ")
+input1 = float(input("enter a input: "))
+input2 = float(input("enter a input: "))
 multiply = int(input1) * int(input2)
 print(multiply)
 
@@ -44,4 +44,6 @@ print(multiply2)
 
 #activity 3 - take radius as input, output volume of sphere (v = 4/3 x pi x r^^3)
 
-radius = input("input a radius: ")
+radius = float(input("input a radius: ")) 
+multiply3 = int(radius) ** 3 * 3.14159 * 4 / 3
+print(multiply3)
