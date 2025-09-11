@@ -1,6 +1,3 @@
-# for counter in range(10):
-#     print("hello") #note: computers start to count at from 0
-
 # #Q1
 # for counter in range(10):
 #     print("elizabeth")
@@ -45,6 +42,7 @@
 #     print(total)
 
 #Q10
-for counter in range(1, 12):
+for counter in range(1, 13):
+    print(counter, "times table")
     for counter2 in range(1, 13):
-        print(counter * counter2)
+        print(counter, "x", counter2, "=", counter * counter2)
