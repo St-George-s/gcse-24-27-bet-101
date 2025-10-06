@@ -59,13 +59,13 @@
 #     print("Time to go shopping - yay")
     
 # Q9
-# Dad says error checking is basic coding skill - users are evil
-sunny = "invalid"
-while (sunny != "Y" and sunny != "N"):
-    sunny = input("is it sunny or not? (Y/N)")
-weekend = "invalid"
-while (weekend != "Y" and weekend != "N"):
-    weekend = input("is it a weekend? (Y/N)? ")
-if (sunny == "Y" and weekend == "Y") or (sunny == "N" and weekend == "N"):
-    print("let's go to the beach, let's go to the waves, waves, wave. What are they going to say? Starships...")
+# # Dad says error checking is basic coding skill - users are evil
+# sunny = "invalid"
+# while (sunny != "Y" and sunny != "N"):
+#     sunny = input("is it sunny or not? (Y/N)")
+# weekend = "invalid"
+# while (weekend != "Y" and weekend != "N"):
+#     weekend = input("is it a weekend? (Y/N)? ")
+# if (sunny == "Y" and weekend == "Y") or (sunny == "N" and weekend == "N"):
+#     print("let's go to the beach, let's go to the waves, waves, wave. What are they going to say? Starships...")
 
