@@ -2,15 +2,16 @@ import random
 
 mastermind = str(random.randint(1000,9999))
 counter = 0
+print(mastermind)
+
 playerGuess = str(input("what is your guess?(4 NUMBERS)   "))
 while len(playerGuess) != 4:
     print("THAT IS NOT RIGHT. 4 NUMBERS!!!!!!!!")
     playerGuess = str(input("what is your guess?(4 NUMBERS)   "))
-
 while playerGuess != mastermind:
     for letter in playerGuess:
         print(letter)
-        if letter == letter in mastermind:
+        if letter in mastermind:
             print("this is correct")
         elif playerGuess == mastermind:
             print("you are fully correct!")
