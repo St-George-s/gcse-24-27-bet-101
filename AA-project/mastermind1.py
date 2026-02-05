@@ -10,27 +10,32 @@ if mode == "hard":
     playerGuess = str(input("what is your guess?(5 NUMBERS)   "))
 elif mode == "easy":
     mastermind = str(random.randint(1000,9999))
+    print(mastermind)
     playerGuess = str(input("what is your guess?(4 NUMBERS)   "))
     while len(playerGuess) != 4:
         print("THAT IS NOT RIGHT. 4 NUMBERS!!!!!!!!")
         playerGuess = str(input("what is your guess?(4 NUMBERS)   "))
+
     while playerGuess != mastermind:
+        matchedChars = []
+        foundAMatch = False
         for index in range(len(mastermind)):
             for indexTwo in range(len(playerGuess)):
                 # If the letters match
                 if mastermind[index] == playerGuess[indexTwo]:
-                    #  Letters match
-                    if index == indexTwo:
-                        # Positions match
-                        print("this is correct and in the right posistion")
-                    elif index != indexTwo:
-                         # Positions don't match
-                         print("this is correct but the wrong posistion")
-                elif str(index) in mastermind:  
-                    # If the letter in is mastermind at all
-                    print("this is correct but wrong posistion")
-                else:
-                     print("this is incorrect")
+                    if mastermind[index] not in matchedChars:
+                        matchedChars.append(mastermind[index])
+                        foundAMatch = True
+                        #  Letters match
+                        if index == indexTwo:
+                            # Positions match
+                            print(mastermind[index], " is correct and in the right posistion")
+                        elif index != indexTwo:
+                            # Positions don't match
+                            print(mastermind[index], " is correct and in the wrong posistion")
+
+        if not foundAMatch:
+            print("No matches, you are rubbish")
         counter = counter + 1
         print("try again")
         print("you have tried", counter, "time(s), not too good")
