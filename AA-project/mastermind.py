@@ -2,7 +2,6 @@ import random
 
 mastermind = str(random.randint(1000,9999))
 counter = 0
-print(mastermind)
 
 playerGuess = str(input("what is your guess?(4 NUMBERS)   "))
 while len(playerGuess) != 4:
