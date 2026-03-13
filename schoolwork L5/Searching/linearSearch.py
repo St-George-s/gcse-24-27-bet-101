@@ -2,7 +2,7 @@
 # create an array
 
 names = ["debbie", "jessie", "vigdis", "emilia"]
-searchValue = "emilia"
+searchValue = "debbie"
 found = False 
 index = 0
 
@@ -11,8 +11,10 @@ index = 0
 # 2. - the search is at the end of the array
 
 while not found and index < len(names):
+    print(names)
     if searchValue == names[index]:
-        found == True
+        print("found")
+        found = True
     else:
         index += 1
 
